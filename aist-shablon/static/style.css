@@ -1,6 +1,7 @@
 body {
 	margin: 0;
-	z-index: 1;
+	
+	font-family: 'RobotoSlab-Regular', Arial, Helvetica, sans-serif !important;
 }
 
 div {
@@ -32,10 +33,18 @@ div {
 	z-index: 2;
 }
 
-.nav-panel {
+.navbar {
+	background-color:  rgb(244, 114, 93);
+}
+
+.dropdown:hover > .dropdown-menu { 
+    display: block; 
+} 
+
+/*.nav-panel {
 	position: relative;
 	height: 100%;
-	bottom: -20px;
+	bottom: -10px;
 	z-index: 3;
 }
 
@@ -91,4 +100,8 @@ div {
 	vertical-align: top;
 	text-align: center;
 	z-index: 4;
+}
+
+.nav-panel  {
+	border: none;
 }

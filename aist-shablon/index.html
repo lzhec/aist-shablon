@@ -3,45 +3,90 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
 	<script type="text/javascript" src="static/jq/jquery-3.3.1.min.js"></script>
-	
+	<script type="text/javascript" src="static/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="static/css/bootstrap.css"> </script>
-	<script src="showhide_script.js"></script>
 	<link rel="stylesheet" href="static/style.css">
-	
 </head>
 <body>
 	<div class="site-container">
 		<header class="hdr">
 			<div class="hdr-top">
-				<div class="nav-panel">
-					<ul class="nav nav-tabs">
-						<li class="nav-item">
-							<a href="" class="nav-link">О нас
-								<ul class="about" hidden>
-									<li><a href="">Акции</a></li>
-									<li><a href="">Вакансии</a></li>
-									<li><a href="">Отзывы клиентов</a></li>
-									<li><a href="">Фотопроекты нашего магазина</a></li>
-									<li><a href="">Контакты</a></li>
-								</ul>
-							</a>
-						</li>
-						<li class="nav-item"><a href="" class="nav-link">Введение в бренды</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Список для будущей мамы</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Полезная информация</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Оплата</a></li>
-						<div class="site-name">
-							<a href="" class="logo">
-								<img src="static/img/logo.png" width="200" height="44" alt>
-							</a>
-						</div>
-					</ul>
-				</div>
+				<nav class="navbar navbar-expand-lg navbar-light" style="height: 50px;">
+					<a class="navbar-brand" href="#">
+						<img src="static/img/logo.png" width="200" height="44" alt>
+					</a>
+				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				    	<span class="navbar-toggler-icon"></span>
+				  	</button>
+				  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    	<ul class="navbar-nav mr-auto">
+				    		<li class="nav-item dropdown">
+				    			<div class="dropdown show">
+					        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">     
+					        			О нас
+					        		</a>
+					        		<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:  rgb(244, 114, 93);">
+										<div class="dropdown show">	
+						          			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown second" aria-haspopup="true" aria-expanded="false">
+						          				Акции
+						          			</a>
+						          			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						          				<img src="static/img/bannery_dlya_sayta_aktsiya_dekabrya.jpg" alt="" style="width: 1200px">
+						          				<img src="static/img/bannery_dlya_sayta_novogodniy_fotoproyekt.jpg" alt="" style="width: 1200px">
+						          				<img src="static/img/bannery_dlya_sayta_mikado.jpg" alt="" style="width: 1200px">
+						          				<img src="static/img/bannery_dlya_sayta_podguzniki_1.jpg" alt="" style="width: 1200px">
+						          				<img src="static/img/bannery_dlya_sayta_dostavka.jpg" alt="" style="width: 1200px">
+						          			</div>	
+					          			</div>	
+					          			<a class="dropdown-item" href="#">Вакансии</a>
+					          			<a class="dropdown-item" href="#">Отзывы клиентов</a>
+					          			<a class="dropdown-item" href="#">Фотопроекты нашего магазина</a>
+					          			<div class="dropdown show">		          				    
+						          			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          				Контакты
+						          			</a>
+						          			<div class="dropdown-menu menu" aria-labelledby="navbarDropdown">
+						          				<span>
+						          					+7 (3952) 98-18-90 <br>
+						          					+7 (914) 898-18-90 <br>
+						          					<br>
+						          					 г. Иркутск <br>
+						          					 ул. Полины Осипенко, д.11 <br>
+						          					 ул. Сергеева, 3/5 (ТРЦ "СИЛЬВЕРмолл") <br>
+						          					 <br>
+						          					 г. Улан-Удэ <br>
+						          					 ул. Ленина, 39 (ТРЦ "Форум")
+						          				</span>
+						          			</div>	
+						          		</div>	          			
+					          		</div>
+					          	</div>
+				      		</li>
+				      		<li class="nav-item active">
+				      			
+					        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					        			Список для будущей мамы
+					        		</a> 
+				        			<span class="sr-only">(current)</span>
+				        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				        				<img src="static/img/momlist.jpg" alt="" style="width: 600px; text-align: center">
+				        				<img src="static/img/homelist.jpg" alt="" style="width: 600px; text-align: center">
+				        			</div>
+				        		
+				      		</li>
+				      		<li class="nav-item">
+				        		<a class="nav-link" href="#">Введение в бренды</a>
+				      		</li>
+				      		<li class="nav-item">
+				        		<a class="nav-link" href="#">Полезная информация</a>
+				      		</li>
+				      		<li class="nav-item">
+				        		<a class="nav-link" href="#">Оплата</a>
+				      		</li>    		
+				   		</ul>
+				  	</div>
+				</nav>				
 			</div>
 			<div class="hdr-bot">
 				
