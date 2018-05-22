@@ -26,27 +26,27 @@
 					        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">     
 					        			О нас
 					        		</a>
-					        		<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:  rgb(244, 114, 93);">
-										<div class="dropdown show">	
-						          			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown second" aria-haspopup="true" aria-expanded="false">
+					        		<div class="dropdown-menu" id="first-menu" aria-labelledby="navbarDropdown" style="background-color:  rgb(244, 114, 93);">
+										<div class="dropdown show btn-group dropright">	
+						          			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						          				Акции
 						          			</a>
-						          			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						          				<img src="static/img/bannery_dlya_sayta_aktsiya_dekabrya.jpg" alt="" style="width: 1200px">
-						          				<img src="static/img/bannery_dlya_sayta_novogodniy_fotoproyekt.jpg" alt="" style="width: 1200px">
-						          				<img src="static/img/bannery_dlya_sayta_mikado.jpg" alt="" style="width: 1200px">
-						          				<img src="static/img/bannery_dlya_sayta_podguzniki_1.jpg" alt="" style="width: 1200px">
-						          				<img src="static/img/bannery_dlya_sayta_dostavka.jpg" alt="" style="width: 1200px">
+						          			<div class="dropdown-menu second-menu-item" id="second-menu-item" aria-labelledby="navbarDropdown">
+						          				<img src="static/img/bannery_dlya_sayta_aktsiya_dekabrya.jpg" alt="" style="width: 800px">
+						          				<img src="static/img/bannery_dlya_sayta_novogodniy_fotoproyekt.jpg" alt="" style="width: 800px">
+						          				<img src="static/img/bannery_dlya_sayta_mikado.jpg" alt="" style="width: 800px">
+						          				<img src="static/img/bannery_dlya_sayta_podguzniki_1.jpg" alt="" style="width: 800px">
+						          				<img src="static/img/bannery_dlya_sayta_dostavka.jpg" alt="" style="width: 800px">
 						          			</div>	
 					          			</div>	
 					          			<a class="dropdown-item" href="#">Вакансии</a>
 					          			<a class="dropdown-item" href="#">Отзывы клиентов</a>
 					          			<a class="dropdown-item" href="#">Фотопроекты нашего магазина</a>
-					          			<div class="dropdown show">		          				    
+					          			<div class="dropdown show btn-group dropright">		          				    
 						          			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						          				Контакты
 						          			</a>
-						          			<div class="dropdown-menu menu" aria-labelledby="navbarDropdown">
+						          			<div class="dropdown-menu second-menu-item" aria-labelledby="navbarDropdown">
 						          				<span>
 						          					+7 (3952) 98-18-90 <br>
 						          					+7 (914) 898-18-90 <br>
@@ -63,17 +63,15 @@
 					          		</div>
 					          	</div>
 				      		</li>
-				      		<li class="nav-item active">
-				      			
-					        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					        			Список для будущей мамы
-					        		</a> 
-				        			<span class="sr-only">(current)</span>
-				        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				        				<img src="static/img/momlist.jpg" alt="" style="width: 600px; text-align: center">
-				        				<img src="static/img/homelist.jpg" alt="" style="width: 600px; text-align: center">
-				        			</div>
-				        		
+				      		<li class="nav-item active">				 
+				        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				        			Список для будущей мамы
+				        		</a> 
+			        			<span class="sr-only">(current)</span>
+			        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			        				<img src="static/img/momlist.jpg" alt="" style="width: 600px; text-align: center">
+			        				<img src="static/img/homelist.jpg" alt="" style="width: 600px; text-align: center">
+			        			</div>				        		
 				      		</li>
 				      		<li class="nav-item">
 				        		<a class="nav-link" href="#">Введение в бренды</a>
@@ -92,36 +90,78 @@
 				
 			</div>
 		</header>
-		<div class="menu-top">
-			<ul class="tabs-nav">
-				<li>
-					<a href="">
-						<span class="mt-image hover">
-							<img src="static/img/ico-baby-1.png" alt="" class="mt">
-							<img src="static/img/ico-baby-2.png" alt="" class="mth">
-						</span>
-						<span class="mt-title">Детские товары</span>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<span class="mt-image hover">
-							<img src="static/img/ico-woman-1.png" alt="" class="mt">
-							<img src="static/img/ico-woman-2.png" alt="" class="mth">
-						</span>
-						<span class="mt-title">Женские товары</span>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<span class="mt-image hover">
-							<img src="static/img/ico-shares-1.png" alt="" class="mt">
-							<img src="static/img/ico-shares-2.png" alt="" class="mth">
-						</span>
-						<span class="mt-title">Акции</span>
-					</a>
-				</li>
-			</ul>
+
+		<div class="pills-tab top-menu">
+			<ul class="nav nav-pills mb-3 nav-top-menu" id="pills-tab" role="tablist">
+	  			<li class="nav-item nav-item-top-menu">
+	  				<p>
+		    			<a class="nav-link top-menu-tab" id="pills-child-tab" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+		    				<span class="mt-image hover">
+								<img src="static/img/ico-baby-1.png" alt="" class="mt">
+							</span>
+							<br>
+							<span class="mt-title">Детские товары</span>
+		    			</a>
+		    		</p>
+	    			<div class="collapse" id="collapseExample">
+	    				<div class="card card-body">
+	    					qqq
+	    				</div>
+	    			</div>
+	  			</li>
+	  			<li class="nav-item nav-item-top-menu">
+	  				<p>
+		    			<a class="nav-link top-menu-tab" id="pills-woman-tab" data-toggle="collapse" href="#collapseExample2" role="tab" aria-controls="pills-profile" aria-selected="false">
+		    				<span class="mt-image hover">
+								<img src="static/img/ico-woman-1.png" alt="" class="mt">
+							</span>
+							<br>
+							<span class="mt-title">Женские товары</span>
+		    			</a>
+		    		</p>
+	    			<div class="collapse" id="collapseExample2">
+	    				<div class="card card-body">
+	    					www
+	    				</div>
+	    			</div>
+	  			</li>
+	  			<li class="nav-item nav-item-top-menu">
+	  				<p>
+		    			<a class="nav-link top-menu-tab" id="pills-woman-tab" data-toggle="collapse" href="#collapseExample3" role="tab" aria-controls="pills-profile" aria-selected="false">
+		    				<span class="mt-image hover">
+								<img src="static/img/ico-shares-1.png" alt="" class="mt">
+							</span>
+							<br>
+							<span class="mt-title-shares">Акции</span>
+		    			</a>
+	    			</p>
+	    			<div class="collapse" id="collapseExample3">
+	    				<div class="card card-body">
+	    					eee
+	    				</div>
+	    			</div>
+	  			</li>
+			</ul>			
+		</div>
+
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  			<div class="carousel-inner">
+    			<div class="carousel-item active">
+    				<a href="">
+      					<img class="d-block w-100 center-banner-img" src="static/img/banner-1.jpg" alt="Первый слайд">
+      				</a>
+    			</div>
+    			<div class="carousel-item">
+    				<a href="">
+      					<img class="d-block w-100 center-banner-img" src="static/img/bannery_dlya_sayta_aktsiya_dekabrya.jpg" alt="Второй слайд">
+      				</a>
+    			</div>
+    			<div class="carousel-item">
+    				<a href="">
+      					<img class="d-block w-100 center-banner-img" src="static/img/bannery_dlya_sayta_podguzniki_1.jpg" alt="Третий слайд">
+      				</a>
+    			</div>
+  			</div>
 		</div>
 	</div>
 </body>
