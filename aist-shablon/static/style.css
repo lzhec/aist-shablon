@@ -91,7 +91,13 @@ div {
 	left: 46%;
 }
 
-#carouselExampleSlidesOnly {
+.container {
+	position: absolute;
+	left: 20%;
+	
+}
+
+#carouselExampleIndicators {
 	position: absolute;
 	top:150px;
 }
@@ -100,8 +106,34 @@ div {
 	
 }
 
+.grid {
+	display: grid;
+	position: absolute;
+	background-color: #f2f2f2;
+	top: 540px;
+	left: 10px;
+	height: 500px;
+	width: 1135px;
+	text-align: center;
+	grid-template-columns: 1fr 1fr 1fr;
+}
 
+.center-item {
+	border: 5px solid white;
+}
 
+.block-text-line {
+	position: relative;
+	bottom: -205px;
+	height: 70px;
+	background-color: rgb(244, 114, 93);
+	color: white;
+	opacity: 0.8;
+}
+
+.item-center {
+
+}
 /*.nav-panel {
 	position: relative;
 	height: 100%;
