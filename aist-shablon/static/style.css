@@ -9,13 +9,15 @@ div {
 }
 
 .site-container {
+	position: absolute;
+	width: 100%;
 	min-height: 100%;
 	margin: auto;
 	display: flex;
 }
 
 .hdr {
-	position: relative;
+	position: absolute;
 	border-bottom: 0;
 	width: 100%;
 	z-index: 1;
@@ -60,15 +62,19 @@ div {
 	background: white;
 }
 
-.top-menu {
+.pills-tab {
 	position: absolute;
 	width: 100%;
 	padding-top: 50px;
+	top: 50px;
 	height: 100px;
 }
 
 .nav-top-menu {
-	width: 100%;	
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100px;	
 }
 
 .nav-item-top-menu {
@@ -93,13 +99,21 @@ div {
 
 .container {
 	position: absolute;
-	left: 20%;
-	
+	height: 100%;
+	width: 100%;
+	top: 150px;	
+}
+
+.center-container {
+	position: relative;
+	left: 35%;
+	height: 100%;
+	width: 100%;
 }
 
 #carouselExampleIndicators {
 	position: absolute;
-	top:150px;
+	top:0px;
 }
 
 .center-banner-img {
@@ -110,10 +124,10 @@ div {
 	display: grid;
 	position: absolute;
 	background-color: #f2f2f2;
-	top: 540px;
-	left: 10px;
+	top: 380px;
+	left: -5px;
 	height: 500px;
-	width: 1135px;
+	width: 101%;
 	text-align: center;
 	grid-template-columns: 1fr 1fr 1fr;
 }
@@ -124,15 +138,40 @@ div {
 
 .block-text-line {
 	position: relative;
-	bottom: -205px;
-	height: 70px;
+	bottom: -150px;
+	height: 90px;
 	background-color: rgb(244, 114, 93);
 	color: white;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
-.item-center {
+#center-item1 {
+	background-image: url(img/center-img-1.jpg);
+}
 
+#center-item2 {
+	background-image: url(img/center-img-2.jpg);
+}
+
+#center-item3 {
+	background-image: url(img/center-img-3.jpg);
+}
+
+#center-item4 {
+	background-image: url(img/center-img-4.jpg);
+}
+
+#center-item5 {
+	background-image: url(img/center-img-5.jpg);
+}
+
+#center-item6 {
+	background-image: url(img/center-img-6.jpg);
+}
+
+.lonls-block {
+	position: absolute;
+	margin-top: 400px;
 }
 /*.nav-panel {
 	position: relative;
